@@ -62,7 +62,7 @@ module.exports = (_, argv) => ({
 
   plugins: [
     new ModuleFederationPlugin({
-      name: "calender_app",
+      name: "calender",
       filename: "remoteEntry.js",
       remotes: {},
       exposes: {

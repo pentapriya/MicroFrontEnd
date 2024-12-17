@@ -4,13 +4,15 @@ import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
 import MemberTasksPage from './components/MemberTasksPage'; 
 import TaskPage from './components/TaskPage'; 
 import PieChart from './components/PieChart'; 
+import CalenderComponent from 'calender/CalenderComponent';
+
 
 
 import "./index.css";
 import EditTaskPage from './components/EdittaskPage';
 
 // Lazy load CalendarComponent
-// const CalenderComponent = React.lazy(() => import("calender_app/CalendarComponent"));
+// const CalenderComponent = React.lazy(() => import("calender/CalendarComponent"));
 
 function App() {
   const navigate = useNavigate(); 
@@ -23,8 +25,8 @@ function App() {
 
   return (
     <div>
-      <button onClick={() => handleNavigate('/calender')}>Go to Calendar</button>
-
+      {/* <button onClick={() => handleNavigate('/calender')}>Go to Calendar</button> */}
+      <CalenderComponent />
       <Suspense fallback={<div>Loading Calendar...</div>}>
         <Routes>
           <Route path="/" element={<TaskPage />} />

@@ -65,7 +65,7 @@ module.exports = (_, argv) => ({
       name: "teammanager",
       filename: "remoteEntry.js",
       remotes: {
-        calender_app:'calender_app@http://localhost:3001/remoteEntry.js'
+        calender:'calender@http://localhost:3001/remoteEntry.js'
       },
       exposes: {},
       shared: {
