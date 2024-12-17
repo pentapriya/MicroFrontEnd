@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  font-size: 3rem;
+  margin: auto;
+  max-width: 800px;
+  margin-top: 20px;
+}
+/* Style the container of the calendar */
+.calenderComponent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px; /* Adjust this margin as needed */
+}
+
+/* Customize the calendar itself */
+.react-calendar {
+  border: 1px solid #ddd; /* Light border for the calendar */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for the calendar */
+  background-color: #fff; /* White background */
+  padding: 20px; /* Increased padding inside the calendar */
+  font-size: 16px; /* Larger font size for better readability */
+  width: 400px; /* Fixed width for the calendar */
+}
+
+/* Style the days of the week (e.g., Sun, Mon, etc.) */
+.react-calendar__month-view__weekdays {
+  background-color: #f5f5f5; /* Light grey background */
+  padding: 10px 0;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  color: #333; /* Dark text color for weekdays */
+  font-weight: bold; /* Bold font for weekdays */
+  text-align: center; /* Center text in each weekday cell */
+}
+
+/* Increase the size of the individual date tiles */
+.react-calendar__tile {
+  padding: 15px; /* Increased padding inside each tile */
+  font-size: 18px; /* Larger font size for dates */
+  border-radius: 50%; /* Keep the circular shape */
+  margin: 5px; /* Space between the tiles */
+}
+
+/* Highlight today's date */
+.react-calendar__tile--now {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text color */
+  border-radius: 50%; /* Circular background */
+}
+
+/* Highlight selected date */
+.react-calendar__tile--active {
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text color */
+  border-radius: 50%; /* Circular background */
+}
+
+/* Hover effect on the calendar tiles */
+.react-calendar__tile:hover {
+  background-color: #f1f1f1; /* Light grey background on hover */
+  cursor: pointer;
+}
+
+/* Style for the header (month and year) */
+.react-calendar__navigation__label {
+  font-size: 18px; /* Slightly larger text for month/year */
+  font-weight: bold;
+}
+
+/* Customize the arrow buttons (prev/next) */
+.react-calendar__navigation__arrow {
+  color: #007bff; /* Blue color for arrows */
+  font-size: 20px; /* Slightly larger arrows */
+}
+
+/* Adjust for small screens (responsive design) */
+@media (max-width: 768px) {
+  .react-calendar {
+    width: 90%; /* Make calendar take up more space on smaller screens */
+  }
+}
